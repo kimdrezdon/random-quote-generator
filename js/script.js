@@ -17,7 +17,68 @@ FSJS project 1 - A Random Quote Generator
 ***/
 
 
-
+let quotes = [
+  {
+      quote: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+      source: "Mahatma Gandhi",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "Just as eating against one’s will is injurious to health, so studying without a liking for it spoils the memory, and it retains nothing it takes in.",
+      source: "Leonardo da Vinci",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "I hope that in this year to come, you make mistakes. Because if you are making mistakes, then you are making new things, trying new things, learning, living, pushing yourself, changing yourself, changing your world. You're doing things you've never done before, and more importantly, you're doing something.",
+      source: "Neil Gaiman",
+      citation: ,
+      year: 2011
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+  {
+      quote: "",
+      source: "",
+      citation: ,
+      year: 
+  }
+]
 
 /***
   Create the `getRandomQuote` function to:
