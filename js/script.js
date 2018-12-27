@@ -19,64 +19,82 @@ FSJS project 1 - A Random Quote Generator
 
 let quotes = [
   {
-      quote: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
-      source: "Mahatma Gandhi",
-      citation: ,
+      quote: "Maybe the dingo ate your baby.",
+      source: "Elaine",
+      citation: "Seinfeld",
       year: 
   }
   {
-      quote: "Just as eating against one’s will is injurious to health, so studying without a liking for it spoils the memory, and it retains nothing it takes in.",
-      source: "Leonardo da Vinci",
-      citation: ,
+      quote: "Treat yo' self.",
+      source: "Tom and Donna",
+      citation: "Parks and Recreation",
       year: 
   }
   {
-      quote: "I hope that in this year to come, you make mistakes. Because if you are making mistakes, then you are making new things, trying new things, learning, living, pushing yourself, changing yourself, changing your world. You're doing things you've never done before, and more importantly, you're doing something.",
-      source: "Neil Gaiman",
-      citation: ,
-      year: 2011
-  }
-  {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "Only boring people are bored.",
+      source: "Betty Draper",
+      citation: "Mad Men",
       year: 
   }
   {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "Nobody exists on purpose. Nobody belongs anywhere. Everybody's gonna die. Come watch TV?",
+      source: "Morty",
+      citation: "Rick & Morty",
       year: 
   }
   {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "My log has something to tell you.",
+      source: "Log Lady",
+      citation: "Twin Peaks",
       year: 
   }
   {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "Pretty, pretty, pretty, pretty good.",
+      source: "Larry David",
+      citation: "Curb Your Enthusiasm",
       year: 
   }
   {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "Sorry if I scared you, I know I have somewhat ghostlike features.",
+      source: "Jared",
+      citation: "Silicon Valley",
       year: 
   }
   {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "We were on a break!",
+      source: "Ross Geller",
+      citation: "Friends",
       year: 
   }
   {
-      quote: "",
-      source: "",
-      citation: ,
+      quote: "The idea of my life coaching another human being should scare you. A lot.",
+      source: "David Rose",
+      citation: "Schitt's Creek",
       year: 
+  }
+  {
+      quote: "Sometimes when I start a sentence, I don't even know where it's going, I just hope I find it along the way.",
+      source: "Michael Scott",
+      citation: "The Office",
+      year: 
+  }
+  {
+    quote: "I've made a huge mistake.",
+    source: "Gob Bluth",
+    citation: "Arrested Development",
+    year: 
+  }
+  {
+    quote: "Is your cat making too much noise all the time? Is your cat constantly stomping around, driving you crazy?",
+    source: "Charlie Day",
+    citation: "It's Always Sunny in Philadelphia",
+    year: 
+  }
+  {
+    quote: "It's not a lie if you believe it.",
+    source: "George Costanza",
+    citation: "Seinfeld",
+    year: 1995;
   }
 ]
 
