@@ -21,82 +21,70 @@ let quotes = [
   {
       quote: "Maybe the dingo ate your baby.",
       source: "Elaine",
-      citation: "Seinfeld",
-      year: 
-  }
+      citation: "Seinfeld"
+  },
   {
       quote: "Treat yo' self.",
       source: "Tom and Donna",
-      citation: "Parks and Recreation",
-      year: 
-  }
+      citation: "Parks and Recreation"
+  },
   {
       quote: "Only boring people are bored.",
       source: "Betty Draper",
-      citation: "Mad Men",
-      year: 
-  }
+      citation: "Mad Men"
+  },
   {
       quote: "Nobody exists on purpose. Nobody belongs anywhere. Everybody's gonna die. Come watch TV?",
       source: "Morty",
-      citation: "Rick & Morty",
-      year: 
-  }
+      citation: "Rick & Morty"
+  },
   {
       quote: "My log has something to tell you.",
       source: "Log Lady",
-      citation: "Twin Peaks",
-      year: 
-  }
+      citation: "Twin Peaks"
+  },
   {
       quote: "Pretty, pretty, pretty, pretty good.",
       source: "Larry David",
-      citation: "Curb Your Enthusiasm",
-      year: 
-  }
+      citation: "Curb Your Enthusiasm"
+  },
   {
       quote: "Sorry if I scared you, I know I have somewhat ghostlike features.",
       source: "Jared",
-      citation: "Silicon Valley",
-      year: 
-  }
+      citation: "Silicon Valley"
+  },
   {
       quote: "We were on a break!",
       source: "Ross Geller",
-      citation: "Friends",
-      year: 
-  }
+      citation: "Friends"
+  },
   {
       quote: "The idea of my life coaching another human being should scare you. A lot.",
       source: "David Rose",
-      citation: "Schitt's Creek",
-      year: 
-  }
+      citation: "Schitt's Creek"
+  },
   {
       quote: "Sometimes when I start a sentence, I don't even know where it's going, I just hope I find it along the way.",
       source: "Michael Scott",
-      citation: "The Office",
-      year: 
-  }
+      citation: "The Office"
+  },
   {
     quote: "I've made a huge mistake.",
     source: "Gob Bluth",
-    citation: "Arrested Development",
-    year: 
-  }
+    citation: "Arrested Development"
+  },
   {
     quote: "Is your cat making too much noise all the time? Is your cat constantly stomping around, driving you crazy?",
     source: "Charlie Day",
-    citation: "It's Always Sunny in Philadelphia",
-    year: 
-  }
+    citation: "It's Always Sunny in Philadelphia"
+  },
   {
     quote: "It's not a lie if you believe it.",
     source: "George Costanza",
     citation: "Seinfeld",
-    year: 1995;
+    year: 1995
   }
-]
+];
 
 /***
   Create the `getRandomQuote` function to:
@@ -105,7 +93,10 @@ let quotes = [
      `quotes` array.
 ***/
 
-
+function getRandomQuote(array) {
+    let randomNumber = Math.floor(Math.random() * array.length);
+    return array[randomNumber]
+}
 
 
 /***
@@ -118,7 +109,7 @@ let quotes = [
    - set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-
+console.log(getRandomQuote(quotes));
 
 
 /***
