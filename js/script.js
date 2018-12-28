@@ -109,8 +109,17 @@ function getRandomQuote(array) {
    - set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-console.log(getRandomQuote(quotes));
+function printQuote() {
+    let randomQuote = getRandomQuote(quotes);
+    let displayQuote = "";
+    displayQuote += "<p class='quote'> " + randomQuote.quote + "</p>";
+    displayQuote += "<p class='source'> " + randomQuote.source ;
+    displayQuote += "<span class='citation'> " + randomQuote.citation + "</span>";
+    displayQuote += "<span class='year'> " + randomQuote.year + "</span></p>";
+    return displayQuote;
+}
 
+console.log(printQuote());
 
 /***
   When the "Show another quote" button is clicked, the event listener 
