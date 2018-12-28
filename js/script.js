@@ -96,7 +96,7 @@ let quotes = [
 function getRandomQuote(array) {
     let randomNumber = Math.floor(Math.random() * array.length);
     return array[randomNumber]
-}
+};
 
 
 /***
@@ -122,7 +122,7 @@ function printQuote() {
     };
     quoteString += "</p>"
     document.getElementById("quote-box").innerHTML = quoteString;
-}
+};
 
 /***
   When the "Show another quote" button is clicked, the event listener 
@@ -134,16 +134,20 @@ function printQuote() {
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
+//Changes the background color each time the Show Another Quote button is clicked.
+
 function randomRGB() {
-    return Math.floor(Math.random()*256);
-}
+    return Math.floor(Math.random() * 256);
+};
 
 function randomColor() {
     var color = "rgb(";
     color += randomRGB() + ",";
     color += randomRGB() + ",";
     color += randomRGB() + ")";
-    return color;
-}
+    document.body.style.backgroundColor = color;
+};
+
+document.getElementById('loadQuote').addEventListener("click", randomColor, false);
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
