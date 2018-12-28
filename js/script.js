@@ -134,4 +134,16 @@ function printQuote() {
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
+function randomRGB() {
+    return Math.floor(Math.random()*256);
+}
+
+function randomColor() {
+    var color = "rgb(";
+    color += randomRGB() + ",";
+    color += randomRGB() + ",";
+    color += randomRGB() + ")";
+    return color;
+}
+
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
