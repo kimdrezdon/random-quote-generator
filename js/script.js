@@ -118,8 +118,9 @@ function printQuote() {
         displayQuote += "<span class='citation'> " + randomQuote.citation + "</span>";
     };
     if (randomQuote.year) {
-        displayQuote += "<span class='year'> " + randomQuote.year + "</span></p>";
+        displayQuote += "<span class='year'> " + randomQuote.year + "</span>";
     };
+    displayQuote += "</p>"
     return displayQuote;
 }
 
