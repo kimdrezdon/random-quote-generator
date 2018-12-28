@@ -111,20 +111,18 @@ function getRandomQuote(array) {
 
 function printQuote() {
     let randomQuote = getRandomQuote(quotes);
-    let displayQuote = "";
-    displayQuote += "<p class='quote'> " + randomQuote.quote + "</p>";
-    displayQuote += "<p class='source'> " + randomQuote.source ;
+    let quoteString = "";
+    quoteString += "<p class='quote'> " + randomQuote.quote + "</p>";
+    quoteString += "<p class='source'> " + randomQuote.source ;
     if (randomQuote.citation) {
-        displayQuote += "<span class='citation'> " + randomQuote.citation + "</span>";
+        quoteString += "<span class='citation'> " + randomQuote.citation + "</span>";
     };
     if (randomQuote.year) {
-        displayQuote += "<span class='year'> " + randomQuote.year + "</span>";
+        quoteString += "<span class='year'> " + randomQuote.year + "</span>";
     };
-    displayQuote += "</p>"
-    return displayQuote;
+    quoteString += "</p>"
+    document.getElementById("quote-box").innerHTML = quoteString;
 }
-
-console.log(printQuote());
 
 /***
   When the "Show another quote" button is clicked, the event listener 
