@@ -22,13 +22,7 @@ let quotes = [
       quote: "There’s nothing we can’t do if we work hard, never sleep, and shirk all other responsibilities in our lives.",
       source: "Leslie Knope",
       citation: "Parks and Recreation",
-      tags: "humor, motivational"
-  },
-  {
-      quote: "Treat yo' self.",
-      source: "Tom and Donna",
-      citation: "Parks and Recreation",
-      tags: "humor, positivity"
+      tags: "humor, motivational, hard work"
   },
   {
       quote: "I knew exactly what to do. But in a much more real sense, I had no idea what to do.",
@@ -41,7 +35,7 @@ let quotes = [
       quote: "I’m going to let you in on a little secret. Every day, once a day, give yourself a present. Don’t plan it, don’t wait for it, just let it happen.",
       source: "Agent Dale Cooper",
       citation: "Twin Peaks",
-      tags: "motivational"
+      tags: "motivational, positivity"
   },
   {
       quote: "Pretty, pretty, pretty, pretty good.",
@@ -58,7 +52,7 @@ let quotes = [
   },
   {
       quote: "If you're having a bad day, just look in the mirror and say: How you doin?",
-      source: "Joey",
+      source: "Joey Tribbiani",
       citation: "Friends",
       tags: "humor, hope, positivity"
   },
