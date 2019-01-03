@@ -145,4 +145,9 @@ function randomColor() {
 
 document.getElementById('loadQuote').addEventListener("click", randomColor, false);
 
+
+//Prints a new quote to the page every 20 seconds.
+
+let intervalID = setInterval(printQuote, 20000);
+
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
