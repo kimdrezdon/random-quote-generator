@@ -21,56 +21,66 @@ let quotes = [
   {
       quote: "There’s nothing we can’t do if we work hard, never sleep, and shirk all other responsibilities in our lives.",
       source: "Leslie Knope",
-      citation: "Parks and Recreation"
+      citation: "Parks and Recreation",
+      tags: "humor, motivational"
   },
   {
       quote: "Treat yo' self.",
       source: "Tom and Donna",
-      citation: "Parks and Recreation"
+      citation: "Parks and Recreation",
+      tags: "humor, positivity"
   },
   {
       quote: "I knew exactly what to do. But in a much more real sense, I had no idea what to do.",
       source: "Michael Scott",
       citation: "The Office, Season 5: The Duel",
-      year: 2009
+      year: 2009,
+      tags: "humor, problem-solving"
   },
   {
       quote: "I’m going to let you in on a little secret. Every day, once a day, give yourself a present. Don’t plan it, don’t wait for it, just let it happen.",
       source: "Agent Dale Cooper",
-      citation: "Twin Peaks"
+      citation: "Twin Peaks",
+      tags: "motivational"
   },
   {
       quote: "Pretty, pretty, pretty, pretty good.",
       source: "Larry David",
-      citation: "Curb Your Enthusiasm"
+      citation: "Curb Your Enthusiasm",
+      tags: "humor, positivity"
   },
   {
       quote: "It's not magic. It's talent and sweat.",
       source: "Gilfoyle",
       citation: "Silicon Valley, Season 1: The Cap Table",
-      year: 2014
+      year: 2014,
+      tags: "hard work, motivational"
   },
   {
       quote: "If you're having a bad day, just look in the mirror and say: How you doin?",
       source: "Joey",
-      citation: "Friends"
+      citation: "Friends",
+      tags: "humor, hope, positivity"
   },
   {
       quote: "You are living an exciting new chapter in the book on tape of your life.",
       source: "Moira Rose",
-      citation: "Schitt'$ Creek"
+      citation: "Schitt'$ Creek",
+      tags: "humor, change, new beginnings"
   },
   {
       quote: "Sometimes when I start a sentence, I don't even know where it's going, I just hope I find it along the way.",
       source: "Michael Scott",
       citation: "The Office, Season 5: Stress Relief",
-      year: 2009
+      year: 2009,
+      tags: "humor, hope"
   },
   {
     quote: "I've often felt that dreams are answers to questions we haven't yet figured out how to ask.",
     source: "Fox Mulder",
     citation: "The X-Files, Season 2: Aubrey",
-    year: 1995
+    year: 1995,
+    tags: "dreams, problem-solving"
   }
 ];
 
