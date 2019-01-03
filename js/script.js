@@ -27,18 +27,18 @@ let quotes = [
   {
       quote: "I knew exactly what to do. But in a much more real sense, I had no idea what to do.",
       source: "Michael Scott",
-      citation: "The Office, Season 5: The Duel",
+      citation: "The Office",
       year: 2009,
       tags: "humor, problem-solving"
   },
   {
-      quote: "I’m going to let you in on a little secret. Every day, once a day, give yourself a present. Don’t plan it, don’t wait for it, just let it happen.",
-      source: "Agent Dale Cooper",
-      citation: "Twin Peaks",
-      tags: "motivational, positivity"
+      quote: "There is literally nothing in this world that you cannot do.",
+      source: "Chris Traeger",
+      citation: "Parks and Recreation",
+      tags: "motivational, hard work"
   },
   {
-      quote: "Pretty, pretty, pretty, pretty good.",
+      quote: "Pretty good. Pretty, pretty, pretty, pretty good.",
       source: "Larry David",
       citation: "Curb Your Enthusiasm",
       tags: "humor, positivity"
@@ -46,7 +46,7 @@ let quotes = [
   {
       quote: "It's not magic. It's talent and sweat.",
       source: "Gilfoyle",
-      citation: "Silicon Valley, Season 1: The Cap Table",
+      citation: "Silicon Valley",
       year: 2014,
       tags: "hard work, motivational"
   },
@@ -60,21 +60,21 @@ let quotes = [
       quote: "You are living an exciting new chapter in the book on tape of your life.",
       source: "Moira Rose",
       citation: "Schitt'$ Creek",
-      tags: "humor, change, new beginnings"
+      tags: "humor, change, hope"
   },
   {
       quote: "Sometimes when I start a sentence, I don't even know where it's going, I just hope I find it along the way.",
       source: "Michael Scott",
-      citation: "The Office, Season 5: Stress Relief",
+      citation: "The Office",
       year: 2009,
       tags: "humor, hope"
   },
   {
-    quote: "I've often felt that dreams are answers to questions we haven't yet figured out how to ask.",
-    source: "Fox Mulder",
-    citation: "The X-Files, Season 2: Aubrey",
-    year: 1995,
-    tags: "dreams, problem-solving"
+      quote: "I've often felt that dreams are answers to questions we haven't yet figured out how to ask.",
+      source: "Fox Mulder",
+      citation: "The X-Files",
+      year: 1995,
+      tags: "dreams, problem-solving"
   }
 ];
 
@@ -104,17 +104,17 @@ function getRandomQuote(array) {
 function printQuote() {
     let randomQuote = getRandomQuote(quotes);
     let quoteString = "";
-    quoteString += "<p class='quote'> " + randomQuote.quote + "</p>";
-    quoteString += "<p class='source'> " + randomQuote.source ;
+    quoteString += "<p class='quote'>" + randomQuote.quote + "</p>";
+    quoteString += "<p class='source'>" + randomQuote.source ;
     if (randomQuote.citation) {
-        quoteString += "<span class='citation'> " + randomQuote.citation + "</span>";
+        quoteString += "<span class='citation'>" + randomQuote.citation + "</span>";
     };
     if (randomQuote.year) {
-        quoteString += "<span class='year'> " + randomQuote.year + "</span>";
+        quoteString += "<span class='year'>" + randomQuote.year + "</span>";
     };
     quoteString += "</p>"
     if (randomQuote.tags) {
-        quoteString += "<p class='tags'> " + randomQuote.tags + "</p>";
+        quoteString += "<p class='tags'>" + randomQuote.tags + "</p>";
     };
     document.getElementById("quote-box").innerHTML = quoteString;
 };
