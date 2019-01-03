@@ -19,9 +19,9 @@ FSJS project 1 - A Random Quote Generator
 
 let quotes = [
   {
-      quote: "Maybe the dingo ate your baby.",
-      source: "Elaine",
-      citation: "Seinfeld"
+      quote: "There’s nothing we can’t do if we work hard, never sleep, and shirk all other responsibilities in our lives.",
+      source: "Leslie Knope",
+      citation: "Parks and Recreation"
   },
   {
       quote: "Treat yo' self.",
@@ -29,18 +29,14 @@ let quotes = [
       citation: "Parks and Recreation"
   },
   {
-      quote: "Only boring people are bored.",
-      source: "Betty Draper",
-      citation: "Mad Men"
+      quote: "I knew exactly what to do. But in a much more real sense, I had no idea what to do.",
+      source: "Michael Scott",
+      citation: "The Office, Season 5: The Duel",
+      year: 2009
   },
   {
-      quote: "Nobody exists on purpose. Nobody belongs anywhere. Everybody's gonna die. Come watch TV?",
-      source: "Morty",
-      citation: "Rick & Morty"
-  },
-  {
-      quote: "My log has something to tell you.",
-      source: "Log Lady",
+      quote: "I’m going to let you in on a little secret. Every day, once a day, give yourself a present. Don’t plan it, don’t wait for it, just let it happen.",
+      source: "Agent Dale Cooper",
       citation: "Twin Peaks"
   },
   {
@@ -49,39 +45,31 @@ let quotes = [
       citation: "Curb Your Enthusiasm"
   },
   {
-      quote: "Sorry if I scared you, I know I have somewhat ghostlike features.",
-      source: "Jared",
-      citation: "Silicon Valley"
+      quote: "It's not magic. It's talent and sweat.",
+      source: "Gilfoyle",
+      citation: "Silicon Valley, Season 1: The Cap Table",
+      year: 2014
   },
   {
-      quote: "We were on a break!",
-      source: "Ross Geller",
+      quote: "If you're having a bad day, just look in the mirror and say: How you doin?",
+      source: "Joey",
       citation: "Friends"
   },
   {
-      quote: "The idea of my life coaching another human being should scare you. A lot.",
-      source: "David Rose",
-      citation: "Schitt's Creek"
+      quote: "You are living an exciting new chapter in the book on tape of your life.",
+      source: "Moira Rose",
+      citation: "Schitt'$ Creek"
   },
   {
       quote: "Sometimes when I start a sentence, I don't even know where it's going, I just hope I find it along the way.",
       source: "Michael Scott",
-      citation: "The Office"
+      citation: "The Office, Season 5: Stress Relief",
+      year: 2009
   },
   {
-    quote: "I've made a huge mistake.",
-    source: "Gob Bluth",
-    citation: "Arrested Development"
-  },
-  {
-    quote: "Is your cat making too much noise all the time? Is your cat constantly stomping around, driving you crazy?",
-    source: "Charlie Day",
-    citation: "It's Always Sunny in Philadelphia"
-  },
-  {
-    quote: "It's not a lie if you believe it.",
-    source: "George Costanza",
-    citation: "Seinfeld",
+    quote: "I've often felt that dreams are answers to questions we haven't yet figured out how to ask.",
+    source: "Fox Mulder",
+    citation: "The X-Files, Season 2: Aubrey",
     year: 1995
   }
 ];
