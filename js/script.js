@@ -118,10 +118,10 @@ function printQuote() {
     if (randomQuote.year) {
         quoteString += "<span class='year'> " + randomQuote.year + "</span>";
     };
-    if (randomQuote.tags) {
-        quoteString += "<span class='tags'> " + randomQuote.tags + "</span>";
-    };
     quoteString += "</p>"
+    if (randomQuote.tags) {
+        quoteString += "<p class='tags'> " + randomQuote.tags + "</p>";
+    };
     document.getElementById("quote-box").innerHTML = quoteString;
 };
 
