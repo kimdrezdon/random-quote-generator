@@ -78,6 +78,8 @@ let quotes = [
   }
 ];
 
+let intervalID;
+
 /***
   Create the `getRandomQuote` function to:
    - generate a random number 
@@ -101,6 +103,20 @@ function getRandomQuote(array) {
    - set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
+//Changes the background color each time the quote changes.
+
+function randomRGB() {
+    return Math.floor(Math.random() * 256);
+};
+
+function randomColor() {
+    var color = "rgb(";
+    color += randomRGB() + ",";
+    color += randomRGB() + ",";
+    color += randomRGB() + ")";
+    document.body.style.backgroundColor = color;
+};
+
 function printQuote() {
     let randomQuote = getRandomQuote(quotes);
     let quoteString = "";
@@ -118,6 +134,14 @@ function printQuote() {
     };
     document.getElementById("quote-box").innerHTML = quoteString;
     randomColor();
+    clearInterval(intervalID);
+    autoRefresh();
+};
+
+//Prints a new quote to the page every 20 seconds.
+
+function autoRefresh() {
+    intervalID = setInterval(printQuote, 7000);
 };
 
 /***
@@ -128,25 +152,5 @@ function printQuote() {
 ***/
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-//Changes the background color each time the Show Another Quote button is clicked.
-
-function randomRGB() {
-    return Math.floor(Math.random() * 256);
-};
-
-function randomColor() {
-    var color = "rgb(";
-    color += randomRGB() + ",";
-    color += randomRGB() + ",";
-    color += randomRGB() + ")";
-    document.body.style.backgroundColor = color;
-};
-
-
-//Prints a new quote to the page every 20 seconds.
-
-let intervalID = setInterval(printQuote, 20000);
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
