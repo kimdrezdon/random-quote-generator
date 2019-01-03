@@ -117,6 +117,7 @@ function printQuote() {
         quoteString += "<p class='tags'>" + randomQuote.tags + "</p>";
     };
     document.getElementById("quote-box").innerHTML = quoteString;
+    randomColor();
 };
 
 /***
@@ -142,8 +143,6 @@ function randomColor() {
     color += randomRGB() + ")";
     document.body.style.backgroundColor = color;
 };
-
-document.getElementById('loadQuote').addEventListener("click", randomColor, false);
 
 
 //Prints a new quote to the page every 20 seconds.
