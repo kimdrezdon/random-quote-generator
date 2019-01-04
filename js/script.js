@@ -5,7 +5,7 @@ FSJS project 1 - A Random Quote Generator
 
 let intervalID;
 
-//Create an array of quote objects to contain the quote properties that will be displayed on the page.
+//Creates an array of quote objects to contain the quote properties that will be displayed on the page.
 
 let quotes = [
   {
@@ -69,7 +69,8 @@ let quotes = [
 ];
 
 /***
-Create a random RGB number string. Apply that random RGB color string to the background color. 
+Creates a random RGB number string by generating 3 random numbers. 
+Applies that random RGB color string to the background color. 
 Colors are limited to darker colors to prevent blending with the white font.
 ***/
 
@@ -85,7 +86,7 @@ function randomColor() {
     document.body.style.backgroundColor = color;
 };
 
-//Generate a random number and return the quote object with that index number from the quotes array
+//Generates a random number and returns the quote object with that index number from the array.
 
 function getRandomQuote(array) {
     let randomNumber = Math.floor(Math.random() * array.length);
@@ -93,11 +94,11 @@ function getRandomQuote(array) {
 };
 
 /***
-Call the getRandomQuote function to select a random quote object from the quotes array. 
-Build an HTML string using the properties of the quote object, only if they exist.
-Remove the contents of the 'quote-box' div and replace with the HTML string.
-Call the randomColor function to randomly change the background color each time the quote changes.
-Clear and restart the interval timer each time the quote changes.
+Calls the getRandomQuote function to get a random quote object from the quotes array. 
+Builds an HTML string using the properties of the quote object, only if they exist.
+Removes the contents of the 'quote-box' div element and replaces with the new HTML string.
+Calls the randomColor function to randomly change the background color.
+Clears and restarts the interval timer.
 ***/
 
 function printQuote() {
@@ -121,12 +122,12 @@ function printQuote() {
     autoRefresh();
 };
 
-//Auto refreshes the quote and background color every 20 seconds.
+//Auto refreshes the quote and background color by calling the printQuote function every 20 seconds.
 
 function autoRefresh() {
     intervalID = setInterval(printQuote, 20000);
 };
 
-//Call the printQuote function each time the 'Show Another Quote' button is clicked
+//Calls the printQuote function each time the 'Show Another Quote' button is clicked.
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
