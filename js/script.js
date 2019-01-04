@@ -96,7 +96,7 @@ function getRandomQuote(array) {
 /***
 Calls the getRandomQuote function to get a random quote object from the quotes array.
 Builds an HTML string using the properties of the quote object, only if they exist.
-Removes the contents of the 'quote-box' div element and replaces with the new HTML string.
+Replaces the contents of the 'quote-box' div element with the new HTML string.
 Calls the randomColor function to randomly change the background color.
 Clears and restarts the interval timer.
 ***/
