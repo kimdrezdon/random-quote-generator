@@ -131,5 +131,3 @@ function autoRefresh() {
 //Calls the printQuote function each time the 'Show Another Quote' button is clicked.
 
 document.getElementById("loadQuote").addEventListener("click", printQuote, false);
-
-//testing github revert
