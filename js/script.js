@@ -74,11 +74,9 @@ Applies that random RGB color string to the background color.
 Colors are limited to darker colors to prevent blending with the white font.
 ***/
 
-function randomRGB() {
-    return Math.floor(Math.random() * 180);
-}
+const randomRGB = () => Math.floor(Math.random() * 180);
 
-function randomColor() {
+const randomColor = () => {
     let color = "rgb(";
     color += randomRGB() + ",";
     color += randomRGB() + ",";
@@ -88,7 +86,7 @@ function randomColor() {
 
 //Generates a random number and returns the quote object with that index number from the array.
 
-function getRandomQuote(array) {
+const getRandomQuote = array => {
     let randomNumber = Math.floor(Math.random() * array.length);
     return array[randomNumber];
 }
@@ -101,7 +99,7 @@ Calls the randomColor function to randomly change the background color.
 Clears and restarts the interval timer.
 ***/
 
-function printQuote() {
+const printQuote = () => {
     let randomQuote = getRandomQuote(quotes);
     let quoteString = "";
     quoteString += "<p class='quote'>" + randomQuote.quote + "</p>";
@@ -124,9 +122,7 @@ function printQuote() {
 
 //Auto refreshes the quote and background color by calling the printQuote function every 15 seconds.
 
-function autoRefresh() {
-    intervalID = setInterval(printQuote, 15000);
-}
+const autoRefresh = () => intervalID = setInterval(printQuote, 15000);
 
 //Calls the printQuote function each time the 'Show Another Quote' button is clicked.
 
