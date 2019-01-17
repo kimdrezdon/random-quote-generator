@@ -77,10 +77,10 @@ Colors are limited to darker colors to prevent blending with the white font.
 const randomRGB = () => Math.floor(Math.random() * 180);
 
 const randomColor = () => {
-    let color = "rgb(";
-    color += randomRGB() + ",";
-    color += randomRGB() + ",";
-    color += randomRGB() + ")";
+    let color = `rgb(`;
+    color += `${randomRGB()},`;
+    color += `${randomRGB()},`;
+    color += `${randomRGB()})`;
     document.body.style.backgroundColor = color;
 }
 
@@ -101,18 +101,18 @@ Clears and restarts the interval timer.
 
 const printQuote = () => {
     let randomQuote = getRandomQuote(quotes);
-    let quoteString = "";
-    quoteString += "<p class='quote'>" + randomQuote.quote + "</p>";
-    quoteString += "<p class='source'>" + randomQuote.source ;
+    let quoteString = ``;
+    quoteString += `<p class='quote'>${randomQuote.quote}</p>`;
+    quoteString += `<p class='source'>${randomQuote.source}`;
     if (randomQuote.citation) {
-        quoteString += "<span class='citation'>" + randomQuote.citation + "</span>";
+        quoteString += `<span class='citation'>${randomQuote.citation}</span>`;
     }
     if (randomQuote.year) {
-        quoteString += "<span class='year'>" + randomQuote.year + "</span>";
+        quoteString += `<span class='year'>${randomQuote.year}</span>`;
     }
-    quoteString += "</p>";
+    quoteString += `</p>`;
     if (randomQuote.tags) {
-        quoteString += "<p class='tags'>" + randomQuote.tags + "</p>";
+        quoteString += `<p class='tags'>${randomQuote.tags}</p>`;
     }
     document.getElementById("quote-box").innerHTML = quoteString;
     randomColor();
