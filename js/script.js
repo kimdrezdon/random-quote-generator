@@ -122,7 +122,7 @@ const printQuote = () => {
 
 //Auto refreshes the quote and background color by calling the printQuote function every 15 seconds.
 
-const autoRefresh = () => intervalID = setInterval(printQuote, 15000);
+const autoRefresh = () => intervalID = setInterval(printQuote, 10000);
 autoRefresh();
 
 //Calls the printQuote function each time the 'Show Another Quote' button is clicked.
