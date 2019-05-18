@@ -91,7 +91,7 @@ body {
   transition: .5s ;
 }
 #loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
+  opacity: 0.7;
 }
 
 #loadQuote:focus {
