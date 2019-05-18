@@ -71,7 +71,7 @@ let quotes = [
 
 /***
 Creates a random RGB number string by generating 3 random numbers.
-Applies that random RGB color string to the background color.
+Applies that random RGB color string to the background color and button color.
 Colors are limited to darker colors to prevent blending with the white font.
 ***/
 
@@ -130,3 +130,7 @@ autoRefresh();
 //Calls the printQuote function each time the 'Show Another Quote' button is clicked.
 
 document.getElementById("loadQuote").addEventListener("click", printQuote, false);
+
+//Calls the printQuote function on first page load
+
+printQuote();
