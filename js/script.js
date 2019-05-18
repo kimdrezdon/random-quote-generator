@@ -4,6 +4,7 @@ FSJS project 1 - A Random Quote Generator
 ******************************************/
 
 let intervalID;
+const button = document.getElementById('loadQuote');
 
 //Creates an array of quote objects to contain the quote properties that will be displayed on the page.
 
@@ -82,6 +83,7 @@ const randomColor = () => {
     color += `${randomRGB()},`;
     color += `${randomRGB()})`;
     document.body.style.backgroundColor = color;
+    button.style.backgroundColor = color;
 }
 
 //Generates a random number and returns the quote object with that index number from the array.
