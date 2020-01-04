@@ -2,6 +2,7 @@
 
 let intervalID;
 const button = document.getElementById('loadQuote');
+let randomUsed = [];
 
 /***
 Creates a random RGB number string by generating 3 random numbers.
@@ -20,11 +21,23 @@ const randomColor = () => {
     button.style.backgroundColor = color;
 }
 
-//Generates a random number and returns the quote object with that index number from the array.
+/***
+Calls the random number generator and returns the quote object with that index number 
+from the array. Prevents repeating phrases by storing used quotes indexes in an array
+***/
+const getRandomNumber = array => {
+    return Math.floor(Math.random() * array.length);
+}
 
 const getRandomQuote = array => {
-    let randomNumber = Math.floor(Math.random() * array.length);
-    
+    let randomNumber;
+    do {
+        randomNumber = getRandomNumber(array);
+    } while (randomUsed.indexOf(randomNumber) >= 0);
+    randomUsed.push(randomNumber);
+    if (randomUsed.length === array.length) {
+        randomUsed = [randomNumber];
+    }
     return array[randomNumber];
 }
 
