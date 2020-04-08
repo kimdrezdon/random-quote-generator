@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 let intervalID;
 const button = document.getElementById('loadQuote');
@@ -19,7 +19,7 @@ const randomColor = () => {
     color += `${randomRGB()})`;
     document.body.style.backgroundColor = color;
     button.style.backgroundColor = color;
-}
+};
 
 /***
 Calls the random number generator and returns the quote object with that index number 
@@ -27,7 +27,7 @@ from the array. Prevents repeating phrases by storing used quotes indexes in an 
 ***/
 const getRandomNumber = array => {
     return Math.floor(Math.random() * array.length);
-}
+};
 
 const getRandomQuote = array => {
     let randomNumber;
@@ -39,7 +39,7 @@ const getRandomQuote = array => {
         randomUsed = [randomNumber];
     }
     return array[randomNumber];
-}
+};
 
 /***
 Calls the getRandomQuote function to get a random quote object from the quotes array.
@@ -64,20 +64,22 @@ const printQuote = () => {
     if (randomQuote.tags) {
         quoteString += `<p class='tags'>${randomQuote.tags}</p>`;
     }
-    document.getElementById("quote-box").innerHTML = quoteString;
+    document.getElementById('quote-box').innerHTML = quoteString;
     randomColor();
     clearInterval(intervalID);
     autoRefresh();
-}
+};
 
 //Auto refreshes the quote and background color by calling the printQuote function every 15 seconds.
 
-const autoRefresh = () => intervalID = setInterval(printQuote, 10000);
+const autoRefresh = () => (intervalID = setInterval(printQuote, 10000));
 autoRefresh();
 
 //Calls the printQuote function each time the 'Show Another Quote' button is clicked.
 
-document.getElementById("loadQuote").addEventListener("click", printQuote, false);
+document
+    .getElementById('loadQuote')
+    .addEventListener('click', printQuote, false);
 
 //Calls the printQuote function on first page load
 
