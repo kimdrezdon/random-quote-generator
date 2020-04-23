@@ -3,6 +3,7 @@
 let intervalID;
 const button = document.getElementById('loadQuote');
 let randomUsed = [];
+const loadQuoteBtn = document.getElementById('loadQuote');
 
 /***
 Creates a random RGB number string by generating 3 random numbers.
@@ -77,9 +78,7 @@ autoRefresh();
 
 //Calls the printQuote function each time the 'Show Another Quote' button is clicked.
 
-document
-    .getElementById('loadQuote')
-    .addEventListener('click', printQuote, false);
+loadQuoteBtn.addEventListener('click', printQuote, false);
 
 //Calls the printQuote function on first page load
 
